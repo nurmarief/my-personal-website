@@ -16,22 +16,10 @@ interface Prop {
 
 const RootLayout: FC<Prop> = ({ children }) => {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body className={generalFont.className}>{children}</body>
     </html>
   )
 };
 
 export default RootLayout;
-
-// export default function RootLayout({
-//   children,
-// }: Readonly<{
-//   children: React.ReactNode;
-// }>) {
-//   return (
-//     <html lang="en">
-//       <body className={inter.className}>{children}</body>
-//     </html>
-//   );
-// }

@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  *, *::before, *::after {
+    @apply text-slate-100 font-thin;
+  }
+
+  body {
+    @apply bg-slate-900;
+  }
+
+  p {
+    @apply mb-4 text-lg tracking-wide;
+  }
+
+  a {
+    @apply underline underline-offset-8 decoration-green-800 decoration-4;
+  }
+}
+
+@layer components {
+  .tech {
+    @apply px-2 py-1 rounded bg-green-800 text-slate-100;
+  }
+}
